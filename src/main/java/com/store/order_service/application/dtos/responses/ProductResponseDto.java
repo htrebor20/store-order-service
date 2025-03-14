@@ -1,0 +1,23 @@
+package com.store.order_service.application.dtos.responses;
+
+import com.store.order_service.domain.model.ProductCategory;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+import java.math.BigDecimal;
+
+@Getter
+@AllArgsConstructor
+public class ProductResponseDto {
+    private Long id;
+
+    private String name;
+
+    private BigDecimal price;
+
+    private int stock;
+
+    private ProductCategory productCategory;
+
+    private String description;
+}
