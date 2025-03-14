@@ -1,5 +1,6 @@
 package com.store.order_service.application.dtos.responses;
 
+import com.store.order_service.domain.model.ProductCategory;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
@@ -16,7 +17,7 @@ public class ProductResponseDto {
 
     private int stock;
 
-    private String category;
+    private ProductCategory productCategory;
 
     private String description;
 }

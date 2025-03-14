@@ -17,17 +17,18 @@ public class Product {
 
     private int stock;
 
-    private String category;
+    private ProductCategory  productCategory;
 
     private String description;
 
-    public Product(Long id, String name, BigDecimal price, int stock, String category, String description) {
+    public Product(Long id, String name, BigDecimal price, int stock, ProductCategory productCategory, String description) {
         this.id = id;
         this.name = name;
         this.price = price;
         this.stock = stock;
-        this.category = category;
+        this.productCategory = productCategory;
         this.description = description;
     }
-
 }
+
+

@@ -1,5 +1,6 @@
 package com.store.order_service.infrastructrure.entities;
 
+import com.store.order_service.domain.model.ProductCategory;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -26,7 +27,9 @@ public class ProductEntity {
 
     private int stock;
 
-    private String category;
+    @Enumerated(EnumType.STRING)
+    @Column(name = "category")
+    private ProductCategory productCategory;
 
     private String description;
 
